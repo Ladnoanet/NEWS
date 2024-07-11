@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 0;
+            background-color: rgb(36, 36, 36);
+            color: white;
+        }
+        header {
+            background-color: rgba(21, 21, 21, 0.434);
+            height: 55px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        h1, p {
+            margin-left: 10px;
+            color: white;
+        }
+        hr {
+            margin: 20px 0;
+        }
+
+        .bbbb {
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: rgb(117, 31, 209);
+            margin-left: auto; 
+            margin-right: 10px;
+        }
+
+        .hui {
+            padding: 6px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: rgb(117, 31, 209);
+            margin-left: 10px; 
+        }
+
+        div {
+            margin-left: 10px;
+            color: rgb(117, 31, 209);
+        }
+
+        input {
+            width: 80%;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(117, 31, 209);
+            border-radius: 4px;
+            background-color: rgb(36, 36, 36);
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            color: white;
+        }
+
+        input:focus {
+            border-color: #66afe9;
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEWS</h1>
+        <a class="bbbb" href="vhod.html">Войти</a>
+    </header>
+    <br><br><br><br>
+    <center>
+        <input type="text" placeholder="поиск..." id="searchInput" onkeyup="search()">
+    </center>
+    <div id="content">
+        <article data-tags="каноа ебанат игры">
+            <h1>Ладно обосрался</h1>
+            <p>Ладно(еблан) поиграл в SCP. ЭТО ДАЖЕ НЕ ХОРООР НО Я ОБОСРАЛСЯ!!!!</p>
+            <div>#каноа #ебанат #игры</div><br>
+            <a class="hui" href="#">Поддержать</a><a class="hui" href="#">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="подвал ебанат оливье">
+            <h1>Извинения</h1>
+            <p>Ладно(еблан) привел свои извенения насчет бунта и стер его следы. Цитата - «Извиняюсь за бунт. Все следы вычещены, я сам хз что высрал»</p>
+            <div>#подвал #ебанат #оливье</div><br>
+            <a class="hui" href="#">Поддержать</a><a class="hui" href="#">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="подвал ебанат оливье">
+            <h1>Бунт в подвале</h1>
+            <p>Ладно(еблан) и другие участники начали массовый протест в "подвал" против трансгендеров</p>
+            <div>#подвал #ебанат #оливье</div><br>
+            <a class="hui" href="#">Поддержать</a><a class="hui" href="#">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="подвал каноа месть">
+            <h1>Энгелу мстят</h1>
+            <p>Охуенными песнями</p>
+            <div>#подвал #каноа #месть</div><br>
+            <a class="hui" href="#">Поддержать</a><a class="hui" href="#">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="нахуя новости ебанат">
+            <h1>Сайт обновлен</h1>
+            <p>Ебанат(Ладно) обновил сайт новостей (нахуя)</p>
+            <div>#нахуя #новости #ебанат</div><br>
+            <a class="hui" href="#">Поддержать</a><a class="hui" href="#">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="эдит оливье ебанат">
+            <h1>Кинули Эдит</h1>
+            <p>Оливье кинула эдит(?)</p>
+            <div>#оливье #эдит #ебанат</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a>
+            <hr>
+        </article>
+        <article data-tags="лгбт против ебанат">
+            <h1>Ладно против трансгендеров</h1>
+            <p>Ему похуй на однополые отношения, трансов ненавидит</p>
+            <div>#лгбт #против #ебанат</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="мотыль мотылек нет_слов">
+            <h1>Мотылёк - Мотылёк</h1>
+            <p>Что тут еще сказать</p>
+            <div>#мотыль #мотылек #нет_слов</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="смерть жалко блин">
+            <h1>Энгел мертв</h1>
+            <p>бумажный энгел одного пользователя тг был разорван</p>
+            <div>#смерть #жалко #блин</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="охуел ясно ебанат">
+            <h1>Ладно совсем охуел</h1>
+            <p>Ладно совсем охуел, и?</p>
+            <div>#охуел #ясно #ебанат</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="черешня отношения каноа">
+            <h1>У Канао Цуюри есть девушка</h1>
+            <p>Тут нечего сказать</p>
+            <div>#черешня #отношения #каноа</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="листай вниз туда">
+            <h1>Пролистывай</h1>
+            <p>ЛИСТАЙ ЛИСТАЙ</p>
+            <div>#листай #вниз #туда</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="охуенно классно мммм">
+            <h1>Ладно ебанулся</h1>
+            <p>У Ладно нет девушки, уже</p>
+            <div>#охуенно #классно #мммм</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="чебурек кот ок">
+            <h1>Чебурек вокзальный</h1>
+            <p>Анфиса - чебурек вокзальный</p>
+            <div>#чебурек #кот #ок</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="игорь игорь игорь">
+            <h1>Игорь</h1>
+            <p>Игорь</p>
+            <div>#игорь #игорь #игорь</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="чтооооо правда ммм">
+            <h1>Кирпич</h1>
+            <p>Дома строят из кирпичей</p>
+            <div>#чтооооо #правда? #ммм</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="чтооооо правда ммм">
+            <h1>Шлакоблок</h1>
+            <p>Дома строят из шлакоблоков</p>
+            <div>#чтооооо #правда? #ммм</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a><hr>
+        </article>
+        
+    
+        <article data-tags="красиво творчество ммм">
+            <h1>Вика</h1>
+            <p>Вика умеет красиво петь</p>
+            <div>#красиво #творчество #ммм</div><br>
+            <a class="hui" href="">Поддержать</a><a class="hui" href="">Хуйня</a>
+        </article>
+    </div>
+
+    <script>
+        function search() {
+            var input, filter, articles, tags, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toLowerCase();
+            articles = document.querySelectorAll('article');
+
+            for (i = 0; i < articles.length; i++) {
+                tags = articles[i].getAttribute('data-tags');
+                if (tags.toLowerCase().indexOf(filter) > -1) {
+                    articles[i].style.display = "";
+                } else {
+                    articles[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

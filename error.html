@@ -13,10 +13,6 @@
             background-color: rgb(36, 36, 36);
             color: white;
         }
-        img {
-            width: 80%;
-        }
-
         header {
             background-color: rgba(21, 21, 21, 0.434);
             height: 55px;
@@ -76,25 +72,14 @@
 <body>
     <header>
         <h1 class="zgl">NEWS</h1>
-        <a class="bbbb" href="vhod.html">Вход</a>
+        <a class="bbbb" href="index.html">Назад</a>
     </header>
     <br><br><br><br><br><br><br>
     <center>
-        <img src="каналы.png" alt="">
-        <h1>Добро пожаловать!</h1>
-        <a class="hui" href="#" id="watchNews">Смотреть новости</a><br><br>
-        <a class="hui" href="vhod.html">Войти в аккаунт</a>
+        <h1>ОЙ!</h1>
+        <h2>Мы не нашли ваш аккаунт</h2>
+        <br><br><br>
+        <a class="bbbb" href="vhod.html">Войти</a>
     </center>
-
-    <script>
-        document.getElementById('watchNews').addEventListener('click', function(event) {
-            event.preventDefault();
-            if (localStorage.getItem('registered') === '1') {
-                window.location.href = 'news.html';
-            } else {
-                window.location.href = 'error.html';
-            }
-        });
-    </script>
 </body>
 </html>

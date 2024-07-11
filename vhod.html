@@ -60,20 +60,18 @@
         }
 
         input {
-    
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-}
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1 class="zgl">NEWS</h1>
-        <a class="bbbb" href="index.html">Назад</a>
     </header>
     <br><br><br><br><br><br><br>
     <center>
@@ -83,7 +81,18 @@
         <p>Пароль</p>
         <input type="password">
         <br><br><br><br>
-        <a class="bbbb" href="index.html">Войти</a><a class="bbbb" href="index.html">Зарегаться</a>
+        <a class="bbbb" href="news.html" id="loginButton">Войти</a>
+        <a class="bbbb" href="news.html" id="registerButton">Зарегаться</a>
     </center>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            localStorage.setItem('registered', '1');
+        });
+
+        document.getElementById('registerButton').addEventListener('click', function() {
+            localStorage.setItem('registered', '1');
+        });
+    </script>
 </body>
 </html>
