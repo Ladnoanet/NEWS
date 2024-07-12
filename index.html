@@ -83,7 +83,8 @@
         <img src="каналы.png" alt="">
         <h1>Добро пожаловать!</h1>
         <a class="hui" href="#" id="watchNews">Смотреть новости</a><br><br>
-        <a class="hui" href="vhod.html">Войти в аккаунт</a>
+        <a class="hui" href="vhod.html">Войти в аккаунт</a><br><br>
+        <a class="hui" href="news.html" id="registerButton">Зарегаться</a>
     </center>
 
     <script>
@@ -94,6 +95,10 @@
             } else {
                 window.location.href = 'error.html';
             }
+        });
+
+        document.getElementById('registerButton').addEventListener('click', function() {
+            localStorage.setItem('registered', '0');
         });
     </script>
 </body>
